@@ -27,7 +27,7 @@ jams/
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Box.com Installation
 
 ### 1. Download the project
 - Download the zipped MCAD project folder
