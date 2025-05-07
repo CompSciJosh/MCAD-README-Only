@@ -22,6 +22,7 @@ jams/
 │       ├── mcad_nasa_colored.txt
 │       ├── nasa_logo.png
 │       └── nasa_logo_colored.txt
+├── requirements.txt
 └── README.md
 ```
 
