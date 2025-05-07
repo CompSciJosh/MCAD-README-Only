@@ -8,7 +8,7 @@ user-friendly CLI.
 ---
 
 ## 📁 Project Structure
-```bash
+```
 jams/
 ├── app/
 │   ├── backend/
@@ -29,7 +29,7 @@ jams/
 
 ---
 
-## ⚙️ Box.com Installation
+## ⚙️ Installation
 
 ### 1. Download the project
 - Download the zipped MCAD project folder
@@ -37,57 +37,57 @@ jams/
 
 ### 2. Navigate to the project directory
 ```bash
-cd ~/PycharmProjects/jams
+    cd ~/PycharmProjects/jams
 ```
 
 ### 3. Create and activate the virtual environment
 ```bash
-python3 -m venv .venv
-````
+    python3 -m venv .venv
+```
 ```bash
-source .venv/bin/activate
+    source .venv/bin/activate
 ```
 
 ### 4. Install dependencies
 ```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 ```
 
 ---
 ## Activate virtual environment if needed, example:
 ```bash
-source ~/PycharmProjects/jams/app/.venv/bin/activate
+    source ~/PycharmProjects/jams/app/.venv/bin/activate
 ```
 
 ## 🚀 Usage in main CLI
 ### ➤ Run the main CLI
 ```bash
-python cli.py
+    python cli.py
 ```
 
 ### ➤ Detect a single image
 ```bash
-python cli.py detect /path/to/image.png --output custom_folder_name
+    python cli.py detect /path/to/image.png --output custom_folder_name
 ```
 
 ### ➤ Batch detect with recursive mode
 ```bash
-python cli.py batch_detect /path/to/folder/ --recursive --output custom_folder_name
+    python cli.py batch_detect /path/to/folder/ --recursive --output custom_folder_name
 ```
 ## 🚀 Usage in interactive shell
 ### ➤ Run the interactive shell
 ```bash
-python cli.py shell
+    python cli.py shell
 ```
 
 ### ➤ Detect a single image
 ```bash
-detect /path/to/image.png --output custom_folder_name
+    detect /path/to/image.png --output custom_folder_name
 ```
 
 ### ➤ Batch detect with recursive mode
 ```bash
-batch_detect /path/to/folder/ --recursive --output custom_folder_name
+    batch_detect /path/to/folder/ --recursive --output custom_folder_name
 ```
 
 > By default, detection results (annotated images and YOLO `.txt` files) are 
@@ -112,6 +112,25 @@ batch_detect /path/to/folder/ --recursive --output custom_folder_name
 
 > By default, the crater detection model is set to `best.pt` but can be customized by including the flag `--model` followed by the crater detection model name.
 > Such as `detect /path/to/folder/ --model newModel.pt` or omit the `--model` flag to use the default crater detection model.
+
+---
+
+## 📂 Detection Results Output
+
+After running crater detection using the `detect` or `batch_detect` commands, the results will be saved to the following location by default:
+
+### jams/app/frontend/Yolo Results/
+
+Your folder will contain:
+- ✅ The annotated lunar images (with crater bounding boxes drawn)
+- 📝 YOLO-formatted `.txt` files for each processed image
+
+> You can customize the output folder name using the `--output` flag.
+>
+> Example:
+> `detect /Users/joshuajackson/Downloads/mcad_moon_data/025/ --output 025`  
+> `--output 025` → saves results in `jams/app/frontend/025/`
+> 
 
 ---
 
@@ -154,6 +173,3 @@ Please contact the project lead or university representative before using or red
 **Team JAMS**  
 *Joshua Jackson, Anthony Pham, Marc Mata, Sukhraj Singh*  
 Senior Design Project 2024 - 2025 · Prairie View A&M University
-
-
-
