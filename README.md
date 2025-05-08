@@ -34,7 +34,7 @@ Since I developed the CLI using the PyCharm IDE, the project directory `jams` is
 If you are using a different IDE or directory structure, you may place the project wherever you prefer, as long as you navigate to the root `jams/` folder before running or modifying the code.
 
 **System Specs:**  
-- Developed on: macOS 15.3.1  
+- Developed on: macOS 15.0 - 15.3.1  
 - Python Version: 3.13.0  
 - IDE: PyCharm (Professional Edition)
 ---
