@@ -1,6 +1,6 @@
-# 🌓 MCAD - Multi-scale Crater Analysis and Detection
+# 🌓 MCAD - Multiscale Crater Analysis and Detection
 
-**MCAD** is a command-line tool for detecting lunar craters in satellite imagery using a custom-trained YOLOv8 model. 
+**MCAD** is a command-line interface (CLI) for detecting lunar craters in satellite imagery using a custom-trained YOLOv8 model. 
 It supports single-image, full directory and recursive batch directory processing. MCAD also provides an interactive shell
 for repeated use. Built for lunar research and detection tasks, MCAD simplifies AI-based crater detection into a 
 user-friendly CLI.
@@ -26,14 +26,23 @@ jams/
 ├── requirements.txt
 └── structure.txt
 ```
+---
+## 🛠️ Development Note
 
+Since I developed the CLI using the PyCharm IDE, the project directory `jams` is located inside the default `PycharmProjects` folder (i.e. `~/PycharmProjects/jams`).
+
+If you are using a different IDE or directory structure, you may place the project wherever you prefer, as long as you navigate to the root `jams/` folder before running or modifying the code.
+
+**System Specs:**  
+- Developed on: macOS 15.3.1  
+- Python Version: 3.13.0  
+- IDE: PyCharm (Professional Edition)
 ---
 
 ## ⚙️ Installation
-
 ### 1. Download the project
 - Download the zipped MCAD project folder
-- Extract the contents to a location of your choice (e.g., `~/PycharmProjects/jams`)
+- Extract the contents to a location of your choice (e.g. ~/PycharmProjects/jams)
 
 ### 2. Navigate to the project directory
 ```bash
@@ -41,6 +50,8 @@ cd ~/PycharmProjects/jams
 ```
 
 ### 3. Create and activate the virtual environment
+
+ - Assuming the user is already inside the `jams/` directory:
 ```bash
 python3 -m venv .venv
 ```
@@ -54,7 +65,7 @@ pip install -r requirements.txt
 ```
 
 ---
-## Activate virtual environment if needed, example:
+## If the terminal is restarted, activate the virtual environment again before running main CLI or interactive shell:
 ```bash
 source ~/PycharmProjects/jams/.venv/bin/activate
 ```
