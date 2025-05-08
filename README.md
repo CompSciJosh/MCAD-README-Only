@@ -65,7 +65,7 @@ pip install -r requirements.txt
 ```
 
 ---
-## If the terminal is restarted, activate the virtual environment again before running main CLI or interactive shell
+## If the terminal is restarted, activate the virtual environment again before running the main CLI or interactive shell
 ```bash
 source ~/PycharmProjects/jams/.venv/bin/activate
 ```
