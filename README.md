@@ -56,7 +56,7 @@ pip install -r requirements.txt
 ---
 ## Activate virtual environment if needed, example:
 ```bash
-source ~/PycharmProjects/jams/app/.venv/bin/activate
+source ~/PycharmProjects/jams/.venv/bin/activate
 ```
 
 ## 🚀 Usage in main CLI
