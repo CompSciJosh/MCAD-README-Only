@@ -122,12 +122,21 @@ After running crater detection using the `detect` or `batch_detect` commands, th
 ### jams/app/frontend/Yolo Results/
 
 Your folder will contain:
-- ✅ The annotated lunar images (with crater bounding boxes drawn)
+- ✅ The annotated lunar images (with crater bounding boxes drawn) as shown below
+
 - 📝 YOLO-formatted `.txt` files for each processed image
+
+    - YOLO-formatted `.txt` file contains the following 6 columns from left to right:
+
+        - (1) **class_id** → represents a single crater class
+        - (2) **center_x**, (3) **center_y** → represents the **normalized coordinates of the center** of the bounding box in the range of 0 to 1, relative to the image width and height
+        - (4) **width**, (5) **height** → represents the **normalized width and height** of the bounding box, again in the range of 0 to 1, relative to the image dimensions
+        - (6) **confidence_score** → indicates the **model's certainty** that the detected object belongs to the specified class, represented as a **floating-point number** between **0** and **1** (i.e. 0.826847 **≈** 82.68%)
+
 
 > You can customize the output folder name using the `--output` flag.
 >
-> Example:
+> Example:  
 > `detect /Users/joshuajackson/Downloads/mcad_moon_data/025/ --output 025`  
 > `--output 025` → saves results in `jams/app/frontend/025/`
 > 
@@ -173,3 +182,6 @@ Please contact the project lead or university representative before using or red
 **Team JAMS**  
 *Joshua Jackson, Anthony Pham, Marc Mata, Sukhraj Singh*  
 Senior Design Project 2024 - 2025 · Prairie View A&M University
+
+
+
