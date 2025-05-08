@@ -35,7 +35,7 @@ If you are using a different IDE or directory structure, you may place the proje
 
 **System Specs:**  
 - Developed on: macOS 15.0 - 15.3.1  
-- Python Version: 3.13.0  
+- Python Version: 3.11  
 - IDE: PyCharm (Professional Edition)
 ---
 
