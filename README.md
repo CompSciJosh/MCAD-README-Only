@@ -37,57 +37,57 @@ jams/
 
 ### 2. Navigate to the project directory
 ```bash
-    cd ~/PycharmProjects/jams
+cd ~/PycharmProjects/jams
 ```
 
 ### 3. Create and activate the virtual environment
 ```bash
-    python3 -m venv .venv
+python3 -m venv .venv
 ```
 ```bash
-    source .venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### 4. Install dependencies
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ---
 ## Activate virtual environment if needed, example:
 ```bash
-    source ~/PycharmProjects/jams/app/.venv/bin/activate
+source ~/PycharmProjects/jams/app/.venv/bin/activate
 ```
 
 ## 🚀 Usage in main CLI
 ### ➤ Run the main CLI
 ```bash
-    python cli.py
+python cli.py
 ```
 
 ### ➤ Detect a single image
 ```bash
-    python cli.py detect /path/to/image.png --output custom_folder_name
+python cli.py detect /path/to/image.png --output custom_folder_name
 ```
 
 ### ➤ Batch detect with recursive mode
 ```bash
-    python cli.py batch_detect /path/to/folder/ --recursive --output custom_folder_name
+python cli.py batch_detect /path/to/folder/ --recursive --output custom_folder_name
 ```
 ## 🚀 Usage in interactive shell
 ### ➤ Run the interactive shell
 ```bash
-    python cli.py shell
+python cli.py shell
 ```
 
 ### ➤ Detect a single image
 ```bash
-    detect /path/to/image.png --output custom_folder_name
+detect /path/to/image.png --output custom_folder_name
 ```
 
 ### ➤ Batch detect with recursive mode
 ```bash
-    batch_detect /path/to/folder/ --recursive --output custom_folder_name
+batch_detect /path/to/folder/ --recursive --output custom_folder_name
 ```
 
 > By default, detection results (annotated images and YOLO `.txt` files) are 
@@ -128,17 +128,17 @@ Your folder will contain:
 
     - YOLO-formatted `.txt` file contains the following 6 columns from left to right:
 
-        - (1) **class_id** → represents a single crater class
-        - (2) **center_x**, (3) **center_y** → represents the **normalized coordinates of the center** of the bounding box in the range of 0 to 1, relative to the image width and height
-        - (4) **width**, (5) **height** → represents the **normalized width and height** of the bounding box, again in the range of 0 to 1, relative to the image dimensions
-        - (6) **confidence_score** → indicates the **model's certainty** that the detected object belongs to the specified class, represented as a **floating-point number** between **0** and **1** (i.e. 0.826847 **≈** 82.68%)
+        - (1) **class_id** ← represents a single class (such as a crater in this case); refers to the category of the object being detected
+        - (2) **center_x**, (3) **center_y** ← represents the **normalized coordinates of the center** of the bounding box in the range of 0 to 1, relative to the image width and height
+        - (4) **width**, (5) **height** ← represents the **normalized width and height** of the bounding box, again in the range of 0 to 1, relative to the image dimensions
+        - (6) **confidence_score** ← indicates the **model's certainty** that the detected object belongs to the specified class, represented as a **floating-point number** between **0** and **1** (i.e. 0.826847 **≈** 82.68%)
 
 
 > You can customize the output folder name using the `--output` flag.
 >
 > Example:  
 > `detect /Users/joshuajackson/Downloads/mcad_moon_data/025/ --output 025`  
-> `--output 025` → saves results in `jams/app/frontend/025/`
+> `--output 025` ← saves results in `jams/app/frontend/025/`
 > 
 
 ---
