@@ -167,13 +167,13 @@ jams/app/backend/system/best.pt
 
 ## 📸 Screenshots
 
-![Crater Detection 000/image3](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_3_visualized.jpg)
+![Crater Detection 000/image3](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_3_visualized.png)
 
-![Crater Detection 000/image4](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_4_visualized.jpg)
+![Crater Detection 000/image4](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_4_visualized.png)
 
-![Crater Detection 000/image5](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_5_visualized.jpg)
+![Crater Detection 000/image5](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_5_visualized.png)
 
-![Crater Detection 000/image6](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_6_visualized.jpg)
+![Crater Detection 000/image6](_Users_joshuajackson_Downloads_mcad_moon_data_000_image_6_visualized.png)
 
 ---
 
